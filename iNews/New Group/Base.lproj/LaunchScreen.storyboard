@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Zapfino.ttf">
+            <string>Zapfino</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="v5j-oL-Fjd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="R22-gn-Knv"/>
+                                    <constraint firstAttribute="width" constant="375" id="rGx-uJ-uIM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsOnly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxv-3u-oL4">
+                                <rect key="frame" x="59" y="335" width="308" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="4g8-CP-W6E"/>
+                                    <constraint firstAttribute="width" constant="308" id="YRn-CU-J9z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v5j-oL-Fjd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Zh-5c-ERh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vxv-3u-oL4" secondAttribute="bottom" constant="186" id="D9R-Sg-DgU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vxv-3u-oL4" secondAttribute="trailing" constant="8" id="M4y-PX-a6f"/>
+                            <constraint firstItem="v5j-oL-Fjd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Mdi-aQ-5gj"/>
+                            <constraint firstItem="Vxv-3u-oL4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="315" id="WPh-92-dbO"/>
+                            <constraint firstItem="v5j-oL-Fjd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="erS-Fb-vBj"/>
+                            <constraint firstItem="v5j-oL-Fjd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="l0e-Pm-0nL"/>
+                            <constraint firstItem="Vxv-3u-oL4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="sfK-vf-GhU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="news" width="375" height="667"/>
+    </resources>
+</document>
